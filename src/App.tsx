@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Closed from "./pages/Closed";
 import Consent from "./pages/Consent";
 import Register from "./pages/Register";
 import Thankyou from "./pages/Thankyou";
