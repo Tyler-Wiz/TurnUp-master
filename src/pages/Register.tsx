@@ -14,8 +14,11 @@ const Register = () => {
     handleSubmit,
   } = useForm();
 
+  let date = new Date();
+  let day = date.getDate();
+
   const onSubmit = (data: any) => {
-    instance.post("/Portharcourt.json", data).then((res) => {
+    instance.post(`/Portharcourt${day}.json`, data).then((res) => {
       setSuccess(res.status);
     });
   };
